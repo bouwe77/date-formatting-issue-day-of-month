@@ -4,7 +4,7 @@ import { format } from "date-fns";
 
 function App() {
   // Kent's date string is coming from his tickets resource on Netlify functions: https://kentcdodds.com/.netlify/functions/tickets
-  let kentsDateString = "2019-09-17T22:00:00.000-07:00";
+  const kentsDateString = "2019-09-17T22:00:00.000-07:00";
 
   // He was formatting the date like so, which resulted in non existing dates:
   const kentsIncorrectlyFormattedDate = format(
